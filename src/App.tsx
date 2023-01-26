@@ -9,15 +9,16 @@ import {
   Navigate,
   useSearchParams,
 } from "react-router-dom";
+
 import {Home,NotFound} from "./pages/index.ts"
+
 const App = () => {
   return (
        <BrowserRouter>
-                  <Routes>
+          <Routes>
             <Route path="/" element={<Home />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
-              
       </BrowserRouter>
       );
 };
